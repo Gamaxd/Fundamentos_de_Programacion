@@ -18,6 +18,6 @@ public class U3programa17 {
         {
             System.out.println("Bienvenido a una sala de ejecucion");
             System.out.println("Escriba n para no condenar a muerte");
-            salir = sc.nextInt().charAt(0);
+            salir = sc.next().charAt(0);
     }while(salir !='n');
 }

@@ -6,7 +6,7 @@ namespace U4programa2 // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            double[] cal = new double[10 ] {90, 100, 80, 70, 100, 80, 40, 30, 69, 100};
+            int[] cal = new int[10 ] {90, 100, 80, 70, 100, 80, 40, 30, 69, 100};
             double promedio = 0, suma = 0;
 
             for (int i = 0; i < 10; i++)

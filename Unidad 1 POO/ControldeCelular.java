@@ -22,32 +22,31 @@ public class ControldeCelular {
         double precio;
         boolean estado;
         ControldeCelular celularb;
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
-        System.out.println("Numero de cuenta?: ");
-        precio = entrada.nextInt(); //Leer un entero.
-        entrada.nextLine(); //Limpia el buffer.
+        System.out.println("Marca del celular: ");
+        marca = sc.nextLine(); //Leer un entero.
+        sc.nextLine(); //Limpia el buffer.
         
-        System.out.println("Nombre del cliente?: ");
-        dueño = entrada.nextLine();
+        System.out.println("Nombre del cliente: ");
+        dueño = sc.nextLine();
         
-        System.out.println("Saldo inicial?: ");
-        precio = entrada.nextDouble();
+        System.out.println("Precio del celular: ");
+        precio = sc.nextDouble();
         
-        System.out.println("CVV?: ");
-        estado = entrada.nextBoolean();
+        System.out.println("Estado del celular: ");
+        estado = sc.nextBoolean();
         
         celularb = new ControldeCelular(marca, dueño, precio, estado);
         double funcion;
-        System.out.println("Que cantidad desea retirar?: ");
-        funcion = entrada.nextDouble();
-        celularb.salida(funcion);
-        System.out.println("El saldo actual es: " + celularb.consultarSaldo());
-        System.out.println("Que cantidad desea depositar?: ");
-        funcion = entrada.nextDouble();
-        funcion.retirar(funcion);
-        System.out.println("El saldo actual es: " + celularb.consultarSaldo());
+        System.out.println("Introduzca la marca del celular: ");
+        marca = sc.nextLine();
+        System.out.println("Nombre del dueño: ");
+        dueño = sc.nextLine();
+        System.out.println("Introduzca el precio del celular: ");
+        precio = sc.nextDouble();
+        
     }
 }
-    
-}
+        
+        
